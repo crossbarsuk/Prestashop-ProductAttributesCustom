@@ -238,34 +238,6 @@ class UsageCustom extends Module
 		$this->_html = '';
 		$this->postProcess();
 
-		// DATA COPY
-		/*if(Tools::isSubmit('importtest'))
-		{
-
-			$sql = '
-
-				SELECT distinct a.id_attribute, ap.id_product, a.name, us.id_usage
-				FROM ps_attribute_lang a, ps_product_attribute_combination at, ps_product_attribute ap, ps_hut_usage us, ps_hut_usage_lang usl
-				WHERE a.id_attribute=at.id_attribute
-				AND ap.id_product_attribute=at.id_product_attribute
-				AND a.id_lang=5
-				AND usl.id_usage=us.id_usage
-				AND usl.name=a.name
-			';
-
-			$actusLang = Db::getInstance()->executeS($sql);
-
-			foreach($actusLang as $ligne)
-			{
-		        $tmp = new ProductUsage();
-		        $tmp->id_product = $ligne['id_product'];
-		        $tmp->id_usage = $ligne['id_usage'];
-		        $tmp->save();
-			}
-
-			die();
-		}*/
-
      	if (Tools::isSubmit('updatehut_catusage'))
      	{
 	     	$this->_display = 'edit';
