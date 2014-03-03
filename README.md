@@ -12,6 +12,8 @@ Les écrans d'administrations sont aussi gérer dans la configuration du module,
 Usage
 -------
 
-Download ZIP, rename folder to UsageCustom and upload in modules folder of Prestashop.
+- Download ZIP
+- Rename folder to UsageCustom 
+- Upload folder in modules folder of Prestashop.
 
 
